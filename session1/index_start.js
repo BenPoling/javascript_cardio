@@ -42,9 +42,12 @@ console.log(reverseString('hello'))
 // Return true if palindrome and false if not
 // ex. isPalindrome('racecar') === 'true', isPalindrome('hello') == false
 
-function isPalindrome(str) {}
-
-
+function isPalindrome(str) {
+  //option1
+  let rString = str.split('').reverse().join('');
+  console.log ('option1: ', str === rString);
+}
+isPalindrome('madam');
 
 // CHALLENGE 3: REVERSE AN INTEGER
 // Return an integer in reverse

@@ -63,8 +63,18 @@ reverseInt(-234567891)
 // CHALLENGE 4: CAPITALIZE LETTERS
 // Return a string with the first letter of every word capitalized
 // ex. capitalizeLetters('i love javascript') === 'I Love Javascript'
-function capitalizeLetters(str) {}
+function capitalizeLetters(str) {
+  //option1
+  console.log(str.toLowerCase().split(' ').map(word => word[0].toUpperCase() + word.substr(1)).join(' '))
 
+  //option2
+  let caps = str.toLowerCase().split(' ');
+  for(let i=0; i<caps.length; i++){
+    caps[i] = caps[i].substring(0, 1).toUpperCase() + caps[i].substring(1);
+  }
+  console.log(caps.join(' '));
+}
+capitalizeLetters('i love javascript')
 
 
 // CHALLENGE 5: MAX CHARACTER

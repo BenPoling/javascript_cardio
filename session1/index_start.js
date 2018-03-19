@@ -53,8 +53,11 @@ isPalindrome('madam');
 // Return an integer in reverse
 // ex. reverseInt(521) === 125
 
-function reverseInt(int) {}
-
+function reverseInt(int) {
+  let revInt = int.toString().split('').reverse().join('');
+  return parseInt(revInt) * Math.sign(int);
+}
+reverseInt(-234567891)
 
 
 // CHALLENGE 4: CAPITALIZE LETTERS

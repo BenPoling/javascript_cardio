@@ -3,9 +3,39 @@
 // ex. reverseString('hello') === 'olleh'
 
 function reverseString(str) {
-  return 'Let\'s Start'
-}
+ 
+//option1
+//return str.split('').reverse().join('');
+console.log('option1: ', str.split('').reverse().join(''));
 
+//option2 
+let reverseStr = '';
+for(let i=str.length-1; i>=0; i--){
+  reverseStr += str[i];
+}
+console.log('option2: ',reverseStr);
+
+//option3 
+let reverse = ''; 
+for(let i=0; i<str.length; i++){
+  reverse = str[i] + reverse;
+}
+console.log('option3: ', reverse);
+
+//option4
+let revStr = '';
+for(let char of str){
+  revStr = char + revStr;
+}
+console.log('option4: ', revStr);
+
+//option5
+let reversed = '';
+str.split('').forEach(char => reversed = char +reversed);
+return reversed;
+
+}
+console.log(reverseString('hello'))
 
 
 // CHALLENGE 2: VALIDATE A PALINDROME

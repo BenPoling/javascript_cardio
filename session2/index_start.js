@@ -62,3 +62,4 @@ function letterChanges(str) {}
 //const output = longestWord('Hello, my name is Brad');
 
 //console.log(output);
+console.log('hello');

@@ -64,3 +64,4 @@ function letterChanges(str) {}
 //console.log(output);
 console.log('hello');
 console.log('hello again!');
+console.log('another console log')
